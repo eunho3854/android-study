@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+<ImageView
+    android:layout_marginTop="50dp"
+    android:layout_marginBottom="50dp"
+    android:layout_width="wrap_content"
+    android:layout_height="75dp"
+    android:scaleType="fitCenter"
+    android:src="@drawable/instagram_logo"/>
+
+    <!-- 텍스트 창이 떠서 화면이 밀려 올라가는 것을 방지하기 위해-->
+    <!-- ScrollView를 사용-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:hint="Email"/>
+
+            <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:hint="Password"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/white_rounded_button"
+                android:text="Login"/>
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@android:color/holo_blue_light"
+                android:text="No account yet? Create one"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
